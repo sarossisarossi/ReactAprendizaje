@@ -14,13 +14,6 @@ import NewUser from "./pages/NewUser";
 import Blog from "./pages/blog";
 import Hws from "./pages/HelloWorldStates"
 import { useEffect } from "react"; 
-import FetchPage from "./pages/FetchPage";
-import Randomuser from "./pages/Randomuser";
-import Cashaccount from "./pages/Cashaccount";
-import UserefPage from "./pages/UseRefPage";
-import LiveOrders from "./pages/LiveOrders";
-import SelectRadio from "./pages/SelectRadio";
-import MousePosition from "./pages/MousePosition";
 function App() {
   // useEffect tiene el callback que es la funcion con el efecto que se quiere ejecturar
   //y puede devolver otra funcion para limpiar el efecto
@@ -45,13 +38,6 @@ function App() {
         <Route path="/newuser" element={<NewUser />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/hws" element={<Hws />}></Route>
-        <Route path="/fetchpage" element={<FetchPage />}></Route>
-        <Route path="/randomuser" element={<Randomuser />}></Route>
-        <Route path="/cashaccount" element={<Cashaccount />}></Route>
-        <Route path="/userefpage" element={<UserefPage />}></Route>
-        <Route path="/liveorders" element={<LiveOrders />}></Route>
-        <Route path="/selectradio" element={<SelectRadio />}></Route>
-        <Route path="/mouseposition" element={<MousePosition />}></Route>
 
       </Routes>
     </div>

@@ -1,0 +1,33 @@
+/* Contenedor de todas las opciones */
+.RadioGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* alineamos todas las opciones a la izquierda */
+  gap: 0.5rem; /* espacio entre cada opción */
+}
+
+/* Cada opción individual */
+.RadioOption {
+  display: flex;          /* input y label en fila */
+  align-items: center;    /* centra verticalmente el texto con el radio */
+  gap: 0.5rem;            /* espacio horizontal entre el radio y el texto */
+  margin: 0;              /* eliminamos márgenes extra */
+  cursor: pointer;        /* cursor tipo mano */
+}
+
+/* Input tipo radio */
+.RadioOption input[type="radio"] {
+  margin: 0;   
+  position:relative;
+  top: -4px;           /* quitamos márgenes por defecto */
+  vertical-align: center; /* alinea mejor con el texto */
+  cursor: pointer;
+}
+
+/* Label del radio */
+.RadioOption label {
+  cursor: pointer;
+  line-height: 0;         /* evita desajustes verticales */
+  vertical-align: center;  /* alinea con el input */
+  user-select: none;       /* evita que se seleccione texto accidentalmente */
+}

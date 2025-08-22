@@ -68,3 +68,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Estructura de archivos
+src/
+├─ App.jsx                # Componente principal
+├─ index.js               # Punto de entrada de React
+├─ assets/                # Imágenes, íconos, videos, fuentes
+│   ├─ logo.png
+│   └─ background.jpg
+├─ components/            # Componentes reutilizables
+│   ├─ Navbar.jsx
+│   ├─ Sidebar.jsx
+│   └─ Card.jsx
+├─ pages/                 # “Páginas” o secciones de tu app
+│   ├─ Homepage.jsx
+│   ├─ AboutMe.jsx
+│   ├─ DessertsList.jsx
+│   └─ Contact.jsx
+├─ data/                  # Archivos con datos estáticos o JSON
+│   └─ dessertsData.js
+├─ styles/                # Archivos CSS o SCSS
+│   ├─ App.css
+│   └─ Navbar.css
+└─ utils/                 # Funciones auxiliares o helpers
+    └─ format.js
