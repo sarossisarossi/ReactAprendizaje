@@ -1,6 +1,6 @@
 import "../styles/Feedback.css"
 import { useState } from "react";
-function Feedback(){
+function Feedback({onSubmit}){
     const [score,setScore] = useState("10");
     const [comment , setComment] =useState("");
     const handleSubmit =(e) => {
@@ -9,10 +9,14 @@ function Feedback(){
             alert("Please provide a comment explaining why the experience was poor.");
             return;     
         }
+        if (onSubmit){
+            onSubmit({score,comment});
+        }
+        
 
         console.log("Form submitted!");
         setComment("");
-        setScore(10);
+        setScore("10");
     
     }
     return(

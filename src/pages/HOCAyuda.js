@@ -230,3 +230,12 @@ HOC USAGE
 // };
 
 // export default App;
+
+// Resumen
+
+// Crea un HOC (withAuth) que verifica la autenticación del usuario.
+// Crea tu componente Page que deseas proteger.
+// Envuelve el componente Page con el HOC withAuth al definir tus rutas.
+
+
+// como seria una logica correcta
