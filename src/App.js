@@ -21,6 +21,7 @@ import UserefPage from "./pages/UseRefPage";
 import LiveOrders from "./pages/LiveOrders";
 import SelectRadio from "./pages/SelectRadio";
 import MousePosition from "./pages/MousePosition";
+import ScrollTracker from "./pages/ScrollTracker";
 function App() {
   // useEffect tiene el callback que es la funcion con el efecto que se quiere ejecturar
   //y puede devolver otra funcion para limpiar el efecto
@@ -52,7 +53,7 @@ function App() {
         <Route path="/liveorders" element={<LiveOrders />}></Route>
         <Route path="/selectradio" element={<SelectRadio />}></Route>
         <Route path="/mouseposition" element={<MousePosition />}></Route>
-
+        <Route path="/scrolltracker" element={<ScrollTracker />}></Route>
       </Routes>
     </div>
   );

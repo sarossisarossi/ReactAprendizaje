@@ -22,6 +22,7 @@ export default function Navbar() {
       <Link to="/liveorders" className="nav-item">Live Orders</Link>
       <Link to="/selectradio" className="nav-item">Select Radio</Link>
       <Link to="/mouseposition" className="nav-item">MousePosition</Link>
+      <Link to="/scrolltracker" className="nav-item">ScrollTracker</Link>
 
       
     </nav>
